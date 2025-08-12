@@ -23,13 +23,16 @@ program
       }
       console.log("✅ 模板下载完成！");
 
-      // 自动安装依赖（可选，也可让用户手动执行 npm install）
-      console.log("📦 开始安装依赖...");
       try {
+        // 初始化 Git 仓库（解决 husky 需要 .git 目录的问题）
+        console.log("📦 初始化 Git 仓库...");
+        execSync(`cd ${projectName} && git init`, { stdio: "inherit" });
+
+        console.log("📦 开始安装依赖...");
         execSync(`cd ${projectName} && npm install`, { stdio: "inherit" });
         console.log("✅ 依赖安装完成！");
         console.log(
-          `\n✅ 项目创建成功，可执行：cd ${projectName} && npm run start`
+          `✅ 项目创建成功，可执行：cd ${projectName} && npm run start`
         );
       } catch (installErr) {
         console.error("❌ 依赖安装失败：", installErr);
