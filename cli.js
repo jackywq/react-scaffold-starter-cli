@@ -6,7 +6,7 @@ const download = require("download-git-repo");
 const path = require("path");
 const { execSync } = require("child_process");
 
-// 定义命令：react-starter <project-name>
+// 定义命令：react-scaffold-starter-cli <project-name>
 program
   .command("create <projectName>")
   .description("创建 React + AntD + Zustand + TS 项目")
