@@ -1,6 +1,6 @@
 {
   "name": "react-scaffold-starter-cli-1",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "bin": {
     "react-scaffold-starter-cli-1": "cli.js"
   },
