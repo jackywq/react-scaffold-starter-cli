@@ -1,8 +1,8 @@
 {
-  "name": "react-scaffold-starter-cli-v1",
+  "name": "react-scaffold-starter-cli-1",
   "version": "1.0.1",
   "bin": {
-    "react-scaffold-starter-cli": "cli.js"
+    "react-scaffold-starter-cli-1": "cli.js"
   },
   "scripts": {
     "start": "node cli.js create my-react-app"

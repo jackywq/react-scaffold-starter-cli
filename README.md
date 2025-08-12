@@ -18,18 +18,19 @@ npm install
 
 ### 三、使用方法
 ##### 1. 命令格式
-在项目目录下，通过 node 执行 cli.js，命令格式为：
+在项目目录下, 执行以下命令，默认创建一个名为 `my-react-app` 的项目
+```bash
+npm run start
+```
+
+也可以通过 node 执行 cli.js，命令格式为：
 
 ```bash
 node cli.js create <projectName>
 ```
-其中 <projectName> 为你要创建的项目名称。
-##### 2. 示例
-创建一个名为 `my-react-app` 的项目：
 
-```bash
-node cli.js create my-react-app
-```
+其中 `<projectName>` 为你要创建的项目名称, 比如使用 `node cli.js create my-react-project` 即可创建一个名为 `my-react-project` 的项目。
+
 
 执行该命令后，工具会：
 从 `github:jackywq/react-antd-zustand-scaffold#main` 仓库拉取项目模板到本地新建的 `my-react-app` 目录。
