@@ -6,6 +6,14 @@ const path = require("path");
 const { execSync } = require("child_process");
 const inquirer = require("inquirer");
 const fs = require("fs");
+const packageJson = require("./package.json");
+
+// 定义版本号（从package.json中读取，避免硬编码）
+program.version(
+  packageJson.version,
+  "-v, --version", // 支持的选项：-v 和 --version
+  "查看当前工具版本" // 选项描述
+);
 
 // 模板仓库映射
 const templateRepos = {
