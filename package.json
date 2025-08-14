@@ -1,8 +1,8 @@
 {
-  "name": "react-scaffold-starter-cli-1",
-  "version": "1.0.0",
+  "name": "react-scaffold-starter-cli",
+  "version": "1.0.2",
   "bin": {
-    "react-scaffold-starter-cli-1": "cli.js"
+    "react-scaffold-starter-cli": "cli.js"
   },
   "scripts": {
     "start": "node cli.js create ${1:-my-react-app}"
@@ -19,8 +19,10 @@
     "react",
     "antd",
     "zustand",
+    "redux",
     "typescript",
     "cli",
+    "vite",
     "scaffold"
   ],
   "license": "MIT"
